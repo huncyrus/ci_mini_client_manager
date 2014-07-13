@@ -5,7 +5,15 @@
  ini_set('display_errors', 1);
 
  
- 
+/**
+ *
+ * clients
+ * Client manager CI modul
+ * @version 0.7.2b
+ * @author Györk "huncyrus" Bakonyi <huncyrus@gmail.com>
+ * @copyright Copyright (c) 2014, Györk "huncyrus" Bakonyi
+ * @todo file upload config move into config file!
+ */
  class clients extends CI_Controller {
   
   /*
@@ -142,9 +150,9 @@
 	} else {
 	  $config['upload_path']   = './assets/';
 	  $config['allowed_types'] = 'gif|jpg|png';
-	  $config['max_size']      = '1000';
-	  $config['max_width']     = '1024';
-	  $config['max_height']    = '768';
+	  $config['max_size']      = '2000';
+	  $config['max_width']     = '4024';
+	  $config['max_height']    = '3768';
 
 	  $this->load->library('upload', $config);
 	
