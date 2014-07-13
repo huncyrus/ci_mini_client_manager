@@ -7,7 +7,7 @@
    <meta name="keywords" content="CodeIgniter Mini Client Manager">
    <meta name="author" content="Gyork 'huncyrus' Bakonyi">
 
-   <title>CI Mini Client Manager - By Györk 'huncyrus' Bakonyi @2014</title>
+   <title>Client Manager | CI Mini Client Manager - By Györk 'huncyrus' Bakonyi @2014</title>
 
    <link href="<?php echo base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
    <link href="<?php echo base_url('assets/css/font-awesome.css') ?>" rel="stylesheet">
@@ -38,14 +38,23 @@
     
     <div id="mycontent" class="container-fluid">
         <div class="row">
+            <h1>Client Manager Modul</h1>
+            <p>This modul handle the clients datas. You can add/remove/modify them.</p>
+
         <?php
             if (!isset($section)) {
-                $section = 'admin_welcome';
+                $section = 'clients_list';
             }
 
             switch($section) {
-                case 'admin_welcome':
-                    $this->load->view('admin_welcome');
+                case 'clients_list':
+                    $this->load->view('client_list');
+                    break;
+                case 'add_clients':
+                    $this->load->view('client_add');
+                    break;
+                case 'update_client':
+                    $this->load->view('client_update');
                     break;
             }
         ?>

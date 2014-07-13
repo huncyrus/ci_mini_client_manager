@@ -44,19 +44,18 @@ $route['admin'] = 'admin';
 $route['admin/login'] = 'admin/login';
 $route['logout'] = 'admin/logout';
 $route['admin/logout'] = 'admin/logout';
-$route['admin/clients'] = 'admin/clients';
-$route['admin/addclient'] = 'admin/add_client';
-$route['admin/updateclient'] = 'admin/update_client';
-$route['admin/delclent'] = 'admin/del_client';
+$route['admin/clients'] = 'clients/clients_list';
+$route['admin/addclient'] = 'clients/add_client';
+$route['admin/updateclient'] = 'clients/update_client';
+$route['admin/delclent'] = 'clients/del_client';
 
-$route['admin/addclient/(:any)'] = 'admin/add_client/$1';
-$route['admin/updateclient/(:any)'] = 'admin/update_client/$1';
-$route['admin/delclient/(:any)'] = 'admin/del_client/$1';
+$route['admin/addclient/(:any)'] = 'clients/add_client/$1';
+$route['admin/updateclient/(:any)'] = 'clients/update_client/$1';
+$route['admin/delclient/(:any)'] = 'clients/del_client/$1';
 
-
-$route['admin/email'] = 'admin/email';
-$route['admin/emailsend'] = 'admin/email_send';
-$route['admin/emailsend/(:any)'] = 'admin/email_send/$1';
+$route['admin/email'] = 'email/email';
+$route['admin/emailsend'] = 'email/email_send';
+$route['admin/emailsend/(:any)'] = 'email/email_send/$1';
 
 
 

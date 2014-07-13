@@ -15,7 +15,7 @@
     <div class="container-fluid" id="clientadd">
         <?php
             $attributes = array('class' => 'form-signin');
-            echo form_open_multipart('admin/update_save_client/' . $hash, $attributes);
+            echo form_open_multipart('clients/update_save_client/' . $hash, $attributes);
             ?>
                 <h1 class="form-signin-heading text-muted">Add client</h1>
 
